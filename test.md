@@ -35,7 +35,7 @@ if (isAwesome){
 
 There is also the option to show SAS code:
 
-```sas
+```SAS
 data dm;
   set sdtm.dm;
   RFSTDT = input(RFSTDTC, e8601da.);
