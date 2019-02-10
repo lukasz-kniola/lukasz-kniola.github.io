@@ -32,3 +32,16 @@ if (isAwesome){
   return true
 }
 ```
+
+There is also the option to show SAS code:
+
+```sas
+data dm;
+  set sdtm.dm;
+  RFSTDT = input(RFSTDTC, e8601da.);
+run;
+
+proc sort data=dm;
+  by USUBJID;
+run;
+```
